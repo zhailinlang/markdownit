@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdownit 隐私权政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fafafa;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin: 30px 0 15px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.1em;
+            margin: 20px 0 10px;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .date {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #f5f5f5;
+        }
+        .no { color: #e53935; font-weight: bold; }
+        .yes { color: #43a047; font-weight: bold; }
+        ul {
+            margin: 10px 0 10px 25px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .contact {
+            background: #f0f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .contact h3 {
+            margin-top: 0;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>隐私权政策</h1>
+    <p class="date">生效日期：2026年4月30日</p>
+
+    <h2>数据收集声明</h2>
+    <p><strong>MarkDownload（Markdownit）不会收集、存储或传输任何用户个人数据。</strong></p>
+
+    <h3>我们访问的数据</h3>
+    <p>本扩展仅在用户主动使用时，<strong>临时访问</strong>以下数据用于功能实现：</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>数据类型</th>
+                <th>用途</th>
+                <th>是否存储/传输</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>网页内容（文字、图片）</td>
+                <td>转换为 Markdown 格式</td>
+                <td class="no">❌ 仅本地处理，不上传</td>
+            </tr>
+            <tr>
+                <td>网页 URL</td>
+                <td>生成 Markdown 链接</td>
+                <td class="no">❌ 仅本地处理，不上传</td>
+            </tr>
+            <tr>
+                <td>用户设置（选项配置）</td>
+                <td>保存用户偏好</td>
+                <td class="yes">✅ 仅存储在浏览器本地存储</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>我们<strong>不</strong>收集的数据</h3>
+    <ul>
+        <li>❌ 身份验证信息（密码、PIN等）</li>
+        <li>❌ 个人通讯（邮件、聊天记录）</li>
+        <li>❌ 位置信息（IP、GPS等）</li>
+        <li>❌ 网络记录（浏览历史）</li>
+        <li>❌ 用户活动（点击、鼠标轨迹等）</li>
+    </ul>
+
+    <h3>数据处理方式</h3>
+    <ol style="margin-left: 25px;">
+        <li><strong>本地处理</strong>：所有网页内容转换均在用户浏览器本地完成</li>
+        <li><strong>本地存储</strong>：用户设置仅保存在浏览器本地存储中</li>
+        <li><strong>无第三方传输</strong>：不会将任何数据传输到外部服务器</li>
+        <li><strong>Obsidian 集成</strong>：仅在用户主动选择时，通过本地协议（<code>obsidian://</code>）打开 Obsidian 应用</li>
+    </ol>
+
+    <h3>权限说明</h3>
+    <p>本扩展申请的权限仅用于功能实现：</p>
+    <ul>
+        <li><code>activeTab</code>：访问当前标签页内容以转换为 Markdown</li>
+        <li><code>downloads</code>：下载生成的 Markdown 文件</li>
+        <li><code>storage</code>：保存用户设置</li>
+        <li><code>clipboardWrite</code>：复制 Markdown 到剪贴板</li>
+        <li><code>contextMenus</code>：提供右键菜单功能</li>
+        <li><code>scripting</code>：读取页面内容</li>
+        <li><code>offscreen</code>：处理文件下载</li>
+    </ul>
+
+    <h3>开发者承诺</h3>
+    <ul>
+        <li>不会向第三方出售或传输用户数据</li>
+        <li>不会将用户数据用于与产品功能无关的目的</li>
+        <li>不会使用用户数据进行信用评估或贷款相关活动</li>
+    </ul>
+
+    <div class="contact">
+        <h3>联系我们</h3>
+        <p>如有隐私相关问题，请通过 GitHub Issues 或扩展商店页面联系开发者。</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Markdownit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
